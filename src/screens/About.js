@@ -9,7 +9,7 @@ const Home = ({ navigation }) => {
         </View>
     );
 };
-
+//addjadj
 const styles = StyleSheet.create({
     container:{
         flex:1,
