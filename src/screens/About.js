@@ -6,10 +6,11 @@ const Home = ({ navigation }) => {
         <View style={styles.container}>
             <Text>Welcome to About Screen</Text>
             <Button title="Go to Home Screen" onPress={() => navigation.goBack()}/>
+            <Button title="Go to Contact Screen" onPress={() => navigation.navigate("Contact")}/>
         </View>
     );
 };
-//addjadj
+
 const styles = StyleSheet.create({
     container:{
         flex:1,
@@ -19,4 +20,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Home;
+export default About;
