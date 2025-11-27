@@ -33,6 +33,13 @@ const Home = ({ navigation }) => {
                 <Icon name="mouse" iconText="Mouse" />
                 <Icon name="keyboard-outline" iconText="Keyboard" />
             </View>
+
+            <View style={styles.productsContainer}>
+                <Text>Most popular products</Text>
+                <FlatList 
+                    data={this.state.products.popularproducts}
+                />
+            </View>
         </View>
     );
 };
@@ -58,6 +65,29 @@ const styles = StyleSheet.create({
     sliderContainer:{
         height:200,
         justifyContent:"center",
+    },
+
+    productsContainer:{
+        marginhorizontal:20,
+    },
+    title:{
+        marginTop:35,
+        fontSize:20,
+        fontWeight:"bold",
+        marginBottom:16,
+    },
+    btn:{
+        backgroundColor:"#22D4FF",
+        height:50,
+        borderRadius:8,
+        justifyContent:"center",
+        marginBottom:20,
+    },
+    btnText:{
+        color:"white",
+        fontWeight:"bold",
+        textAlign:"center",
+        fontSize:18,
     },
 });
 
